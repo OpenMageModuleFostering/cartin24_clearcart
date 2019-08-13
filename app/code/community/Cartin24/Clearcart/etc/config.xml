@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+
+<!--
+ * Cartin24
+ * @package    Cartin24_Clearcart
+ * @copyright  Copyright (c) 2015-2016 Cartin24. (http://www.cartin24.com)
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+-->
+
+<config>
+    <modules>
+        <Cartin24_Clearcart>
+            <version>1.0.0</version>
+        </Cartin24_Clearcart>
+    </modules> 
+    <admin>
+		<routers>
+			<adminhtml>
+				<args>
+					<modules>
+						<Cartin24_Clearcart after="Mage_Adminhtml">Cartin24_Clearcart_Adminhtml</Cartin24_Clearcart>
+					</modules>
+				</args>
+			</adminhtml>
+		</routers>
+	</admin>
+	<adminhtml>
+	<menu>
+	   <clearcart module="clearcart">
+		 <title>Clear Cart</title>
+		 <sort_order>85</sort_order>
+			<action>adminhtml/clearcart</action>
+	   </clearcart>
+	 </menu>
+	 <acl>
+		<resources>
+			<all>
+				<title>Allow Everything</title>
+			</all>
+			<admin>
+				<children>
+				   <clearcart module="clearcart">
+						<title>Clear Cart</title>
+						<sort_order>85</sort_order>						
+				   </clearcart>
+				</children>
+			</admin>
+		</resources>   
+	</acl>
+	<layout>
+		<updates>
+			<clearcart>
+				<file>clearcart.xml</file>
+			</clearcart>
+		</updates>
+	</layout>
+	</adminhtml>
+    <global>
+	  <models>
+		<clearcart>
+			<class>Cartin24_Clearcart_Model</class>	
+		</clearcart>
+      </models>
+	  <blocks>
+		<clearcart>
+		  <class>Cartin24_Clearcart_Block</class>
+		</clearcart>
+	  </blocks>
+	  <helpers>
+		<clearcart>
+		  <class>Cartin24_Clearcart_Helper</class>
+		</clearcart>
+	  </helpers>          
+    </global>        
+</config>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Cartin24_Clearcart</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">OSL 3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Cartin24 creates an extension for Magento which clears the customer's cart via admin.</summary>
+    <description>Cartin24 creates an extension for Magento which clears the customer's cart via admin. The extension provides an easy way to clear the cart items which have been in the cart of customer's for long time. &#x201C;Clear All Guest Carts&#x201D; Button removes all products from guest&#x2019;s cart.  By using this extension admin can clear all cart items added by the users by clicking "Clear All Carts" Button. We have also another option to clear the cart items of selected customers. The extension is only having backend settings.</description>
+    <notes>Cartin24 creates an extension for Magento which clears the customer's cart via admin. The extension provides an easy way to clear the cart items which have been in the cart of customer's for long time. &#x201C;Clear All Guest Carts&#x201D; Button removes all products from guest&#x2019;s cart.  By using this extension admin can clear all cart items added by the users by clicking "Clear All Carts" Button. We have also another option to clear the cart items of selected customers. The extension is only having backend settings.</notes>
+    <authors><author><name>Cartin24</name><user>Cartin24</user><email>developer@cartin24.com</email></author></authors>
+    <date>2016-08-16</date>
+    <time>09:19:09</time>
+    <contents><target name="magecommunity"><dir name="Cartin24"><dir name="Clearcart"><dir name="Block"><dir name="Adminhtml"><dir name="Clearcart"><file name="Grid.php" hash="ed23e1e80dc5522fe1daec0153663698"/></dir><file name="Clearcart.php" hash="66d8f347e6d1b2d8d2e620588b3f5d63"/><dir name="Renderer"><file name="CustomerName.php" hash="1fad3b38932f89507446148c1d6f0b5e"/></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="09988c01d3c9f05fb0cfd78a70e2d773"/></dir><dir name="controllers"><dir name="Adminhtml"><file name="ClearcartController.php" hash="50aa7ec0716c11120d3e48c6b877e710"/></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="e1a3a67a5b2cfeb1688296874ae7cb75"/><file name="config.xml" hash="b0e6479333ef997ca7f15adf6fce22e1"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Cartin24_Clearcart.xml" hash="f318253bf5a44e7b8bbbbc85a761d25f"/></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="clearcart.xml" hash="5579028a03f13474f4c0ca66754c8036"/></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
+</package>
