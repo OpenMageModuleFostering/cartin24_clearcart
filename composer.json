@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Cartin24_Clearcart",
+    "name": "OpenMageModuleFostering\/Cartin24_Clearcart",
     "type": "magento-module",
     "license": "OSL-3.0",
     "homepage": "",
     "description": "Cartin24 creates an extension for Magento which clears the customer's cart via admin.",
     "authors": [
-    {
-        "name": "Cartin24",
-        "email": "developer@cartin24.com"
-    }
-],
+        {
+            "name": "Cartin24",
+            "email": "developer@cartin24.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
